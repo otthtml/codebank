@@ -1,0 +1,18 @@
+{
+    "name": "app",
+    "dockerComposeFile": ["./docker-compose.yaml"],
+    "service": "app",
+    "extensions": [
+      "golang.go",
+      "davidanson.vscode-markdownlint",
+      "shardulm94.trailing-spaces",
+      "IBM.output-colorizer",
+      "ms-azuretools.vscode-docker"
+    ],
+    "settings": {
+        "go.useLanguageServer": true
+    },
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/go/src",
+    "postCreateCommand": "sudo chmod -R 777 .pgdata"
+  }
