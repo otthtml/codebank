@@ -22,7 +22,7 @@ type Transaction struct {
 	CreatedAt    time.Time
 }
 
-func newTransaction() *Transaction {
+func NewTransaction() *Transaction {
 	t := &Transaction{
 		ID:           uuid.NewV4().String(),
 		Amount:       0,
